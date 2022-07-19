@@ -19,6 +19,9 @@ app.use('/api/users', userRoute);
 const postsRoute = require('./routes/posts');
 app.use('/api/posts', postsRoute);
 
+const cinemsRoute = require('./routes/cinema');
+app.use('/api/cinema', cinemsRoute);
+
 
 app.listen(3000, ()=>{
     console.log(" server is running on 3000");
